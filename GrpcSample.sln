@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcServer", "GrpcServer\Gr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClient", "GrpcClient\GrpcClient.csproj", "{ADE40345-46AB-4CD1-84A9-EFB8CF872ACB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcStreamServer", "GrpcStreamServer\GrpcStreamServer.csproj", "{1F285146-EDF1-454A-996E-439BA66DB22B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcStreamClient", "GrpcStreamClient\GrpcStreamClient.csproj", "{485D78E8-B46F-490D-B83E-4A37C30692B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{ADE40345-46AB-4CD1-84A9-EFB8CF872ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADE40345-46AB-4CD1-84A9-EFB8CF872ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADE40345-46AB-4CD1-84A9-EFB8CF872ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F285146-EDF1-454A-996E-439BA66DB22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F285146-EDF1-454A-996E-439BA66DB22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F285146-EDF1-454A-996E-439BA66DB22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F285146-EDF1-454A-996E-439BA66DB22B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{485D78E8-B46F-490D-B83E-4A37C30692B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485D78E8-B46F-490D-B83E-4A37C30692B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485D78E8-B46F-490D-B83E-4A37C30692B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485D78E8-B46F-490D-B83E-4A37C30692B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
