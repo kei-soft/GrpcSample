@@ -4,6 +4,8 @@ using Grpc.Core;
 
 using GrpcStreamServer;
 
+using Serilog;
+
 using static GrpcStreamServer.WeatherForecasts;
 
 namespace GrpcStreamServer.Services
@@ -23,6 +25,8 @@ namespace GrpcStreamServer.Services
             while (!context.CancellationToken.IsCancellationRequested && i < 20)
             {
                 await Task.Delay(500); // Gotta look busy
+
+                Log.Information($"{i} - Serilog Server Test");
 
                 var forecast = new WeatherData
                 {
