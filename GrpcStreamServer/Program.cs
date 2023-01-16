@@ -1,9 +1,5 @@
 using GrpcStreamServer.Services;
 
-using Microsoft.AspNetCore.Server.Kestrel.Core;
-
-using Microsoft.Extensions.Configuration.Json;
-
 using Serilog;
 using Serilog.Core;
 
@@ -33,7 +29,12 @@ var builder = WebApplication.CreateBuilder(args);
 // For instructions on how to configure Kestrel and gRPC clients on macOS, visit https://go.microsoft.com/fwlink/?linkid=2099682
 
 // Add services to the container.
-builder.Services.AddGrpc();
+builder.Services.AddGrpc(option =>
+{
+    option.MaxSendMessageSize = 1000 * 1024 * 1024;
+    option.MaxReceiveMessageSize = 1000 * 1024 * 1024;
+});
+
 
 var app = builder.Build();
 

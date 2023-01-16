@@ -2,8 +2,6 @@ using Google.Protobuf.WellKnownTypes;
 
 using Grpc.Core;
 
-using GrpcStreamServer;
-
 using Serilog;
 
 using static GrpcStreamServer.WeatherForecasts;
@@ -36,6 +34,8 @@ namespace GrpcStreamServer.Services
                 };
 
                 _logger.LogInformation("Sending WeatherData response");
+
+                responseStream.WriteOptions = new WriteOptions(WriteFlags.BufferHint);
 
                 await responseStream.WriteAsync(forecast);
             }
